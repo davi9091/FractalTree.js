@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fractal Generator</title>
+	<link rel="stylesheet" href="./style.css">
+	<!--<script src="FractalTree.js"></script>-->
+	<script src="Fractal.js"></script>
+	<script src="Client.js"></script>
+</head>
+<body>
+	<div id="mainBlock">
+		<div id="graphicBlock">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div id="configBlock">
+			<button onClick="constructButton()">Construct Tree</button>
+			<button onClick="cleanButton()">Clear</button>
+			<input type="text" placeholder="Color" id="colorInput">
+			<input type="text" placeholder="Depth" id="depthInput">
+		</div>
+		<div id="about" class="dialogBox hidden">
+			<a href="#" class="close-dialog-link">Закрыть</a>
+			<h1>About:</h1>
+			<h3>Arkady Rubtsov</h3>
+			<p>Software Engineer</p>
+			<p>made on Electron.js in 2019</p>
+		</div>
+
+		<div id="help" class="dialogBox hidden">
+			<a href="#" class="close-dialog-link">Закрыть</a>
+			<h1>Help</h1>
+			<p><b>Construct Tree</b> - constructs tree.</p>
+			<p><b>Clear</b> - destroys tree.</p>
+			<p><b>Color field</b> - sets color.<br /> Random if empty.</p>
+			<p><b>Depth field</b> - sets depth.<br /> 11 if empty.</p>
+		</div>
+	</div>
+
+
+</body>
+</html>

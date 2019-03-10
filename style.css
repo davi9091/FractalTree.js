@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    font-size: larger;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+input {
+    font-size: larger;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#mainBlock {
+    position: absolute;
+    display: grid;
+    grid-template-rows: auto 80px;
+    /*background: black;*/
+    width: 100%;
+    height: 100%;
+}
+#graphicBlock {
+    background-color: aliceblue;
+}
+#configBlock {
+    background-color: antiquewhite;
+}
+
+#canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 1px 1px black;
+}
+
+.dialogBox.hidden {
+    display: none;
+}
+
+.close-dialog-link {
+    position: absolute;
+    right: 15px;
+}
